@@ -50,7 +50,7 @@ class Test_İnsGiris:
         passwordInputt.send_keys("555555s")
         loginButton = self.waitForElementVisible((By.XPATH,loginbutton_id))
         loginButton.click()
-        sleep(20) #robot butonu çıktığı için sleepleri 20 saniye ekledim.
+        sleep(20) #robot butonu çıktığı için sleepleri 20 saniye ekledim manuel tıklama gerçekleşti.
         errormessagee= self.waitForElementVisible((By.XPATH,errormessagee_id))
         assert errormessagee.text == errormessagee_text 
         sleep(20) 
