@@ -55,10 +55,7 @@ class Test_İnsGiris:
         assert errormessagee.text == errormessagee_text 
         sleep(20) 
         
-        
-        
-        
-        
+  
     @pytest.mark.skip    
     def test_sifremi_unuttum(self):
     
@@ -70,18 +67,7 @@ class Test_İnsGiris:
         Baglantigonder=self.waitForElementVisible((By.XPATH,Baglantigonder_id))
         Baglantigonder.click()
             
-    
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
-        
+  
     @pytest.mark.skip
     def test_giris(self):
         emailInput=self.waitForElementVisible((By.NAME,email_id))
